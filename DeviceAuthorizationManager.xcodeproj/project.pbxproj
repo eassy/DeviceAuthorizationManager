@@ -15,6 +15,11 @@
 		C4EF054E223F890600128529 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF054D223F890600128529 /* main.m */; };
 		C4EF0558223F890600128529 /* DeviceAuthorizationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF0557223F890600128529 /* DeviceAuthorizationManagerTests.m */; };
 		C4EF0563223F890600128529 /* DeviceAuthorizationManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF0562223F890600128529 /* DeviceAuthorizationManagerUITests.m */; };
+		C4EF058B223F89EB00128529 /* DevicePermissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF0582223F89EB00128529 /* DevicePermissionRequest.m */; };
+		C4EF058C223F89EB00128529 /* CameraPermissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF0583223F89EB00128529 /* CameraPermissionRequest.m */; };
+		C4EF058D223F89EB00128529 /* AlbumPermissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF0585223F89EB00128529 /* AlbumPermissionRequest.m */; };
+		C4EF058E223F89EB00128529 /* LocatePermissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF0588223F89EB00128529 /* LocatePermissionRequest.m */; };
+		C4EF058F223F89EB00128529 /* DevicePermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EF0589223F89EB00128529 /* DevicePermissionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		C4EF055E223F890600128529 /* DeviceAuthorizationManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceAuthorizationManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4EF0562223F890600128529 /* DeviceAuthorizationManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceAuthorizationManagerUITests.m; sourceTree = "<group>"; };
 		C4EF0564223F890600128529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4EF0581223F89EB00128529 /* LocatePermissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocatePermissionRequest.h; sourceTree = "<group>"; };
+		C4EF0582223F89EB00128529 /* DevicePermissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevicePermissionRequest.m; sourceTree = "<group>"; };
+		C4EF0583223F89EB00128529 /* CameraPermissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraPermissionRequest.m; sourceTree = "<group>"; };
+		C4EF0584223F89EB00128529 /* DevicePermissionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicePermissionManager.h; sourceTree = "<group>"; };
+		C4EF0585223F89EB00128529 /* AlbumPermissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumPermissionRequest.m; sourceTree = "<group>"; };
+		C4EF0586223F89EB00128529 /* CameraPermissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraPermissionRequest.h; sourceTree = "<group>"; };
+		C4EF0587223F89EB00128529 /* DevicePermissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicePermissionRequest.h; sourceTree = "<group>"; };
+		C4EF0588223F89EB00128529 /* LocatePermissionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocatePermissionRequest.m; sourceTree = "<group>"; };
+		C4EF0589223F89EB00128529 /* DevicePermissionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevicePermissionManager.m; sourceTree = "<group>"; };
+		C4EF058A223F89EB00128529 /* AlbumPermissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumPermissionRequest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,7 @@
 		C4EF053D223F890300128529 /* DeviceAuthorizationManager */ = {
 			isa = PBXGroup;
 			children = (
+				C4EF0580223F89EB00128529 /* PermissionManager */,
 				C4EF053E223F890300128529 /* AppDelegate.h */,
 				C4EF053F223F890300128529 /* AppDelegate.m */,
 				C4EF0541223F890300128529 /* ViewController.h */,
@@ -130,6 +146,23 @@
 				C4EF0564223F890600128529 /* Info.plist */,
 			);
 			path = DeviceAuthorizationManagerUITests;
+			sourceTree = "<group>";
+		};
+		C4EF0580223F89EB00128529 /* PermissionManager */ = {
+			isa = PBXGroup;
+			children = (
+				C4EF0584223F89EB00128529 /* DevicePermissionManager.h */,
+				C4EF0589223F89EB00128529 /* DevicePermissionManager.m */,
+				C4EF0587223F89EB00128529 /* DevicePermissionRequest.h */,
+				C4EF0582223F89EB00128529 /* DevicePermissionRequest.m */,
+				C4EF0581223F89EB00128529 /* LocatePermissionRequest.h */,
+				C4EF0588223F89EB00128529 /* LocatePermissionRequest.m */,
+				C4EF058A223F89EB00128529 /* AlbumPermissionRequest.h */,
+				C4EF0585223F89EB00128529 /* AlbumPermissionRequest.m */,
+				C4EF0586223F89EB00128529 /* CameraPermissionRequest.h */,
+				C4EF0583223F89EB00128529 /* CameraPermissionRequest.m */,
+			);
+			path = PermissionManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EF058F223F89EB00128529 /* DevicePermissionManager.m in Sources */,
+				C4EF058E223F89EB00128529 /* LocatePermissionRequest.m in Sources */,
+				C4EF058D223F89EB00128529 /* AlbumPermissionRequest.m in Sources */,
 				C4EF0543223F890300128529 /* ViewController.m in Sources */,
 				C4EF054E223F890600128529 /* main.m in Sources */,
+				C4EF058C223F89EB00128529 /* CameraPermissionRequest.m in Sources */,
+				C4EF058B223F89EB00128529 /* DevicePermissionRequest.m in Sources */,
 				C4EF0540223F890300128529 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8KY8X4895;
 				INFOPLIST_FILE = DeviceAuthorizationManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8KY8X4895;
 				INFOPLIST_FILE = DeviceAuthorizationManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
